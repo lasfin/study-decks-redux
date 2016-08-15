@@ -1,0 +1,28 @@
+{
+  "name": "study-decks-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "live-server": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "watchify src/app.js -o public/bundle.js -t [babelify --presets [react es2015]]",
+    "server": "cd public; live-server --port=1234 --entry-file=index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lasfin/study-decks-redux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lasfin/study-decks-redux/issues"
+  },
+  "homepage": "https://github.com/lasfin/study-decks-redux#readme"
+}
