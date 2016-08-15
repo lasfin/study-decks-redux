@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "watchify src/app.js -o public/bundle.js -t [babelify --presets [react es2015]]",
+    "build": "watchify src/app.js -o public/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "server": "cd public; live-server --port=1234 --entry-file=index.html"
   },
   "repository": {
